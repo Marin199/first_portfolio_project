@@ -1,0 +1,16 @@
+#toggle-theme {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    position: fixed;
+    padding: 20px;
+    top: 1px;
+    right: 1px;
+    transition: rotate 300ms;
+    z-index: 1;
+}
+
+#toggle-theme:active {
+    rotate: 45deg;
+}
+

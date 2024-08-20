@@ -1,0 +1,26 @@
+
+.figure-comment {
+    
+    padding: 30px 5px;
+    border-top-right-radius: 50px;
+    margin-right: 0px;
+    padding-bottom: 0px;
+}
+
+.figure-name {
+    border: 2px solid var(--gray);
+    padding-left: 20px;
+    margin-bottom: 55%;
+    border-bottom-left-radius: 50px;
+    text-align: end;
+    padding-right: 10px;
+}
+
+@media (max-width: 37.5rem) {
+    .figure-name {
+        margin-bottom: auto;
+        padding: 10px 20px;
+        margin-left: auto;
+        border-bottom-left-radius: 0;
+    }
+}

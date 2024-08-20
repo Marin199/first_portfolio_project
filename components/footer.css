@@ -1,0 +1,29 @@
+.style {
+    list-style-type: none;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserved {
+    display: flex;
+    gap: 10px;
+}
+
+.reserved p {
+    margin: 0;
+}
+
+.under,
+.style {
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    gap: var(--gap);
+}

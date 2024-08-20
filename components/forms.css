@@ -1,0 +1,26 @@
+.input {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 1.9;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+.input:active {
+    border-bottom: 1px solid var(--primary);
+}
+
+.input:focus-within {
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+

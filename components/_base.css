@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+:root {
+    --primary: #f2d544;
+    --dark-blue: #130c24;
+    --black: #232020;
+    --gray: #999999;
+    --beige: #f5f5f1;
+    --gap: 80px;
+
+    /* variabile personalizate pentru teme*/
+
+    --text-color: white;
+    --light-icon: white;
+    --gray-dark: #666666;
+    --gray-light: #bdbdbd;
+    --dark-icon: var(--black);
+    --anchor-color: var(--primary);
+
+    @media (max-width: 37.5rem) {
+        --gap: 30px;
+    }
+}
+
+html {
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+}
+
+html::selection {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+@media (max-width: 48.5rem) {
+    li:not(.tag, #hire-me, .style > li){    
+        display: none;    
+    }
+}
+
+.light-theme {
+    background-color: var(--beige);
+    --text-color: var(--black);
+    --gray-light: var(--gray-dark);
+    --light-icon: var(--black);
+    --dark-icon: var(white);
+    --anchor-color: var(--black);
+}
+
+@media (max-width: 37.5rem) {
+
+    html {
+        font-size: 70%;
+    }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}

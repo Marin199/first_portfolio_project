@@ -1,0 +1,42 @@
+
+#scroll-down {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 70px;
+    left: calc(50vw - 48px / 2);
+    cursor: pointer;
+    height: 100px;
+    animation: move 2s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+ } 
+
+@keyframes move {
+   0% {
+      translate: 0 0;
+   }
+   50% {
+      translate: 0 -15px;
+   }
+}
+
+ .highlight {
+    fill: var(--dark-icon);
+ } 
+
+#scroll-down svg {
+    fill: var(--dark-icon);
+ } 
+
+#scroll-down svg .highlight-path {
+    stroke: var(--light-icon);
+ } 
+
+#scroll-down:hover > svg {
+     fill: var(--light-icon);
+   } 
+
+#scroll-down > svg .hilight-path {
+     stroke: black;
+   }

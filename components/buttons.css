@@ -1,0 +1,46 @@
+.btn {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.87rem;
+    line-height: 1.5rem;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: translate 300ms;
+}
+
+.btn:active {
+    opacity: 1;
+    translate: 1px 1px;
+}
+
+.btn--nav {
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.btn--raised {
+    background-color: var(--primary);
+    color: var(--black);
+    padding: 10px 15px;
+    padding-right: 40px;
+    background-position: 20px center;
+}
+
+.btn--line {
+    color: (--text-color);
+    padding: 10px;
+}
+
+.btn--line::after {
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid var(--primary);
+    height: 4px;
+    width: 100%;
+}

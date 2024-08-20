@@ -1,0 +1,30 @@
+
+
+a {
+    color: var(--anchor-color);
+    opacity: 0.8;
+}
+
+p {
+    color: var(--gray-light);
+}
+
+a:active {
+    opacity: 1;
+}
+
+strong {
+    font-weight: normal;
+}
+
+figure.layout-grid-half {
+    margin-left: 0px;
+}
+
+blockquote {
+    margin-left: 0px;
+}
+
+address {
+    font-style: normal;
+}

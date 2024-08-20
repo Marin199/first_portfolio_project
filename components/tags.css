@@ -1,0 +1,33 @@
+
+.tags {
+    margin-top: 0px;
+    padding-left: 0px;
+    list-style: none;
+    border-radius: 4px;
+ } 
+
+.tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+ } 
+
+.tag {
+  padding: 10px clamp(calc(30vw / 3), calc(40vw / 4), calc(50rem / 5));
+  border: 2px solid black;
+  font-weight:  bold;
+ } 
+
+ 
+ html .tag{
+    border: 1px solid var(--text-color);
+  } 
+
+html.light-theme .tag {
+    border: 1px solid var(--black);
+ }
+    
+
+
+
+

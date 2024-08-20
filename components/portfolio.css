@@ -1,0 +1,35 @@
+#portfolio .container {
+  display: grid;
+  gap: var(--gap);
+ } 
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+} 
+
+.portfolio:nth-child(odd) .portfolio-screenshot {
+  order: 2;
+} 
+
+.portfolio-screenshot {
+  max-width: 300px;
+  max-height: 300px;
+} 
+
+@media (max-width: 37.5rem) {
+ .portfolio {
+   display: block;
+   text-align: center;
+  } 
+
+ .portfolio-screenshot {
+   max-width: 175px;
+   max-height: 175px;
+  }
+
+.portfolio > div {
+   order: 2;
+ } 
+}
